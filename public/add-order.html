@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Documentos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">Cadastrar Documento para Entrega</h1>
+            
+            <form id="orderForm" class="space-y-4">
+                <div>
+                    <label class="block text-gray-700 mb-2">Nome do Cliente</label>
+                    <input type="text" id="clientName" required
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="col-span-2">
+                        <label class="block text-gray-700 mb-2">Rua</label>
+                        <input type="text" id="street" required
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Número</label>
+                        <input type="text" id="number" required
+                            class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 mb-2">Bairro</label>
+                    <input type="text" id="neighborhood" required
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 mb-2">Prioridade</label>
+                    <div class="flex space-x-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="priority" value="normal" checked
+                                class="text-blue-500 focus:ring-blue-500">
+                            <span class="ml-2">Normal</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="priority" value="urgente"
+                                class="text-red-500 focus:ring-red-500">
+                            <span class="ml-2">Urgente</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 mb-2">Documentos (opcional)</label>
+                    <textarea id="documents"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        rows="2" placeholder="Lista de documentos separados por vírgula"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-200 mb-4">
+                    Cadastrar Entrega
+                </button>
+                
+                <a href="/" class="block w-full text-center bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-200">
+                    <i class="fas fa-arrow-left mr-2"></i>Voltar
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
