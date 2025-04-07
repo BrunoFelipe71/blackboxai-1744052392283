@@ -1,0 +1,23 @@
+{
+  "name": "office-boy-delivery-app",
+  "version": "1.0.0",
+  "description": "Aplicativo para gerenciamento de entregas de documentos",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.17",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "font-awesome": "^4.7.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
